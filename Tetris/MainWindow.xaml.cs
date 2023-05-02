@@ -21,7 +21,7 @@ namespace Tetris
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly ImageSource[] tileImages = new ImageSource[]
+        private readonly ImageSource [] tileImages = new ImageSource[]
         {
             new BitmapImage(new Uri ("Assets/TileEmpty.png", UriKind.Relative)),
             new BitmapImage(new Uri ("Assets/TileCyan.png", UriKind.Relative)),
@@ -83,8 +83,8 @@ namespace Tetris
             {
                 for (int c = 0; c < grid.Columns; c++)
                 {
-                    int id = grid[r, c];
-                    imageControls[r, c].Source = tileImages[id];
+                    int ID = grid[r, c];
+                    imageControls[r, c].Source = tileImages[ID];
                 }
             }
         }
